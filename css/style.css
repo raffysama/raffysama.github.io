@@ -385,22 +385,20 @@ html{
    
 }
 
-
+.port-image p{
+    color: var(--heading);
+    font-size: 15px;
+}
+.port-image h3{
+    color: var(--heading);
+    
+}
 .port-wrapper .port-image .swiper-info{
     padding: 2rem;
 }
 
 .port-wrapper{
     margin-top: 100px;
-}
-
-.port-image p{
-    color: var(--heading);
-    font-size: 16px;
-}
-.port-image h3{
-    color: var(--heading);
-    
 }
 
 
