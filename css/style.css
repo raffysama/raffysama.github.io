@@ -12,7 +12,7 @@
     text-transform: capitalize;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -67,16 +67,17 @@ html{
 }
 .header{
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
-    background:#fff;
+  
 
 }
 
 .header.header-active{
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -121,10 +122,20 @@ html{
 }
 
 .main-container{
+    background-color:aqua;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;    
+    height: 100vh; 
+ 
+}
+
+.main-container.active{
+    padding-top: 195px;
+}
+
+.main-active{
+    margin-top: 200px;
 }
 
 .main-container .text-main{

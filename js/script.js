@@ -1,5 +1,6 @@
 window.addEventListener('scroll', () =>{
   var header = document.querySelector('.header');
+  var scrollheight= document.querySelector('.main-container');
  
   if(window.scrollY > 68){
     header.classList.add("header-active");
@@ -8,6 +9,16 @@ window.addEventListener('scroll', () =>{
   else{
     header.classList.remove("header-active");
   }
+
+  if(window.scrollY > 68){
+    scrollheight.classList.add("active");
+    
+  }
+  else{
+    scrollheight.classList.remove("active");
+  }
+
+
 
 })
 
@@ -54,7 +65,11 @@ window.addEventListener('load', () =>{
 
 window.addEventListener('scroll', () =>{
   var scroll = document.querySelector('.scrollTop');
+
   scroll.classList.toggle('active', window.scrollY > 500)
+
+
+ 
 })
 
 
