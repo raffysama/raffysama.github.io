@@ -360,8 +360,7 @@ html{
 .port-swiper{
     width: 100%;
     max-width: 800px;
-    
-   
+ 
 }
 
 .portfolio .port-heading{
@@ -386,12 +385,6 @@ html{
    
 }
 
-.port-wrapper .port-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  
-}
 
 .port-wrapper .port-image .swiper-info{
     padding: 2rem;
@@ -399,6 +392,15 @@ html{
 
 .port-wrapper{
     margin-top: 100px;
+}
+
+.port-image p{
+    color: var(--heading);
+    font-size: 15px;
+}
+.port-image h3{
+    color: var(--heading);
+    
 }
 
 
@@ -511,7 +513,6 @@ html{
 .contact-name .contact-email{
     background: rgb(240, 238, 252);
     border-radius: 10px;
-    
     padding: 10px;
     width: 100%;
 }
@@ -624,7 +625,7 @@ html{
 
 .footer-container{
     width: 100%;
-    height: 200px;
+    height: 250px;
     background: var(--secondaryblue);
 }
 
@@ -663,7 +664,12 @@ html{
     font-size: 20px;
 }
 
-
+.copy-text{
+    text-align: center;
+    font-size: 12px;
+    color: rgb(145, 144, 144);
+    background: var(--secondaryblue);
+}
 
 
 
@@ -914,13 +920,31 @@ html{
         align-items: center;
         height: 100vh;    
     }
-    .content-project{
-        background: rgb(240, 238, 252);
-        margin-right: 600px;
+    .contact-inputs{
+        padding-left: 20px;
+    
+        padding-right: 20px;
     }
     .contact-details{
-        margin-left: 100px;
+        margin-left: 20px;
+    }
+    .contact-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 200px;
     }
 
+    .footer-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+        background: var(--secondaryblue);
+    }
 
+    .footer-details .nav-footer ul{
+        display: flex;
+        flex-direction: column;
+    }
 }
