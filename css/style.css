@@ -15,6 +15,7 @@
 }
 html{
     scroll-behavior: smooth;
+    
 }
 #menu-bar{
     color: var(--yellow);
@@ -26,9 +27,6 @@ html{
     position: fixed;
     bottom: -100px;
     right: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 50px;
     height: 50px;
     border: 1px solid  var(--secondaryblue);
@@ -120,28 +118,32 @@ html{
 .header .nav .nav-menu ul li a.active{
     color: var(--blue);
 }
+
 .main-container{
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 12rem;
-    height: 100vh;
-    
+    height: 100vh;    
 }
+
 .main-container .text-main{
     line-height: 2em;
     padding: 20px;
 }
 
-.main-container .image-main .icon{
+.main-container .icon{
     font-size: 1.5rem;
-    margin-top: 10px;
+    padding: 20px;
     display: flex;
-    justify-content: flex-end;
-    gap: 10px;
+    flex-direction: column;
+    gap: 20px;
+
 }
-.main-container .image-main .icon i{
+
+.main-container .icon i{
     color: var(--secondaryblue);
+    display: block;
 
 }
 .main-container .text-main h3{
@@ -178,27 +180,28 @@ html{
     max-width: 400px;
     height: auto;
     border-radius: 50%;
-    display: block;
-    box-sizing: border-box;
-    height: auto;
     background-color: #006cc4;
     clip-path: ellipse(90% 100% at 90% 0%);
 }
 
 .main-container .image-main{
-    padding-left: 5rem;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.main-container .image-main .icon{
-    flex-direction: column;
-    padding: 0 50px;
-}
+
+
+.img-container
 
 .about{
     padding: 1rem;
+
+}
+
+.info-container{
+    width: 100%;
 }
 
 .about .text-about{
@@ -219,7 +222,6 @@ html{
 .about-container{
     display: flex;
     margin-top: 100px;
-    
 }
 .about-container .image-about img{
     width: 100%;
@@ -227,7 +229,7 @@ html{
 }
 
 .about-container .about-intro{
-    padding: 2rem 0 0 5rem;
+    padding: 0 0 0 5rem;
     
 }
 
@@ -252,6 +254,10 @@ html{
 
 .skills{
     padding: 1rem;
+}
+
+.skills-container{
+    width: 100%;
 }
 
 .skills .text-skills{
@@ -333,6 +339,11 @@ html{
     padding: 1rem;
     
 }
+
+.portfolio-container{
+    width: 100%;
+}
+
 .port-swiper{
     width: 100%;
     max-width: 800px;
@@ -436,7 +447,8 @@ html{
 .contact-name{
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
+    gap: 10px;
 }
 
 .contact-details .contact-list h3{
@@ -467,7 +479,6 @@ html{
 .contact-name .contact-Fname{
     background: rgb(240, 238, 252);
     border-radius: 10px;
- 
     padding: 10px;
     width: 100%;
 }
@@ -487,7 +498,7 @@ html{
 .contact-name .contact-email{
     background: rgb(240, 238, 252);
     border-radius: 10px;
-    margin-left: 15px;
+    
     padding: 10px;
     width: 100%;
 }
@@ -535,6 +546,11 @@ html{
 }
 
 
+.project-container{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 .contact-form .contact-btn{
@@ -545,16 +561,13 @@ html{
     height: 60px;
     border-radius: 10px;
     margin-top: 30px;
-    margin-right: 50px;
     color: #fff;
     font-size: 1rem;
     cursor: pointer;
    
 }
 
-.contact-form .contact-btn i{
-    margin-left: 5px;
-}
+
 
 .status-container{
     display: flex;
@@ -596,6 +609,12 @@ html{
     }
 }
 
+.footer-container{
+    width: 100%;
+    height: 200px;
+    background: var(--secondaryblue);
+}
+
 .footer-details{
     display: flex;
     justify-content: space-between;
@@ -605,7 +624,7 @@ html{
 
 .footer-details .nav-footer ul{
     display: flex;
-    gap: 100px;
+    gap: 50px;
 }
 
 .footer-details .nav-footer ul a{
@@ -613,10 +632,7 @@ html{
 }
 
 
-.footer{
-    background: var(--secondaryblue);
-    height: 200px;
-}
+
 
 .footer-details .footer-heading h1{
     color: #fff;
@@ -686,6 +702,11 @@ html{
         display: flex;
         gap: 30px;
     }
+
+    .footer-container{
+        width: 100%;
+       
+    }
 }
 
 @media (max-width: 968px){
@@ -707,6 +728,15 @@ html{
         flex-direction: column;
         
     }
+
+    .main-container .icon{
+        font-size: 1.5rem;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    
 
     .main-container .text-main{
         line-height: 2em;
@@ -744,28 +774,34 @@ html{
     .contact-name .contact-Fname{
         background: rgb(240, 238, 252);
         border-radius: 10px;
-        margin-right: 50px;
+      
 
     }
     .contact-name .contact-email{
         background: rgb(240, 238, 252);
         border-radius: 10px;
-        margin-right: 65px;
+       
     }
     .content-project{
-        position: relative;
+        
         background: rgb(240, 238, 252);
         margin-right: 200px;
         border-radius: 10px;
         padding: 10px;
         width: 100%;
-        right: 4%;
+    
     }
 
-    .content-message{
-        position: relative;
-        right: 4%;
+    .project-container{
+        display: flex;
+        flex-direction: column;
+        
     }
+
+    .contact-details{
+        margin-left: 100px;
+    }
+
 
     .footer-details{
        display: flex;
@@ -809,9 +845,7 @@ html{
         color: #fff;
         font-size: 1rem;
         cursor: pointer;
-        margin-left: 20px;
-        position: relative;
-        right: 7%;
+        
     }
     .header .nav-menu{
         position: absolute;
@@ -858,7 +892,7 @@ html{
     
 }
 
-@media (max-width: 441px){
+@media (max-width: 480px){
     .main-container{
        
         padding-top: 6rem;
@@ -869,4 +903,9 @@ html{
         background: rgb(240, 238, 252);
         margin-right: 600px;
     }
+    .contact-details{
+        margin-left: 100px;
+    }
+
+
 }

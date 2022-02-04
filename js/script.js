@@ -31,6 +31,8 @@ window.addEventListener('scroll', () =>{
         keyboard: true,
       });
 
+
+      
 let navBar = document.querySelector(".header .nav-menu");
 let menuFaBtn = document.querySelector("#menu-bar");
 
