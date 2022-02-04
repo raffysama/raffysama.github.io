@@ -12,6 +12,7 @@
     text-transform: capitalize;
     list-style: none;
     text-decoration: none;
+    overflow: hidden;
 }
 html{
     scroll-behavior: smooth;
@@ -893,12 +894,14 @@ html{
 
 @media (max-width: 480px){
     .main-container{
-        
-    
-        
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;    
     }
     .content-project{
-        
         background: rgb(240, 238, 252);
         margin-right: 600px;
     }
