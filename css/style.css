@@ -69,10 +69,9 @@ html{
     width: 100%;
     position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
-  
+    
+
 
 }
 
@@ -128,10 +127,6 @@ html{
     align-items: center;
     height: 100vh; 
  
-}
-
-.main-container.active{
-    padding-top: 195px;
 }
 
 .main-active{

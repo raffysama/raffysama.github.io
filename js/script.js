@@ -10,13 +10,6 @@ window.addEventListener('scroll', () =>{
     header.classList.remove("header-active");
   }
 
-  if(window.scrollY > 68){
-    scrollheight.classList.add("active");
-    
-  }
-  else{
-    scrollheight.classList.remove("active");
-  }
 
 
 
