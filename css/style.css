@@ -382,9 +382,45 @@ html{
 .port-wrapper .port-image img{
     width: 100%;
     height: auto;
-   
+    transition: .2s linear;
+    cursor: pointer;
 }
-
+.port-wrapper .port-image:hover img{
+    transform: scale(1.1);
+}
+.portfolio-container .popup-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 1000;
+    transition: .2s ease-in;
+    display: none;
+}
+.portfolio-container .popup-image span{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+}
+.portfolio-container .popup-image img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 1200px;
+    object-fit: cover;
+    transition: .2s ease-in;
+    
+}
 .port-image p{
     color: var(--heading);
     font-size: 15px;
@@ -752,6 +788,9 @@ html{
         display: flex;
         flex-direction: row;
         gap: 20px;
+    }
+    .portfolio-container .popup-image img{
+        width: 95%;
     }
     
 
