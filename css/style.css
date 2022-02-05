@@ -76,7 +76,7 @@ html{
 
 }
 .top-div{
-    height: 80px;
+    height: 130px;
     background: #fff;
     width: 100%;
 }
@@ -949,8 +949,7 @@ html{
 }
 
 @media (max-width: 480px){
-    .main-container{
-      
+    .main-container{ 
         display: flex;
         flex-direction: column;
         justify-content: center;
