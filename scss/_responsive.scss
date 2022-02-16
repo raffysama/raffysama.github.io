@@ -1,0 +1,43 @@
+@include media-md{
+    
+   
+
+    .introduction__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .introduction__header{
+        width: 100%;
+        padding: 0 2rem 0 2rem;
+    }
+
+    
+    
+}
+
+@include media-lg{
+    
+}
+
+@include media-sml{
+    .home__btn{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+        margin-bottom: 150px;
+    }
+
+    .footer__container{
+
+        &--link{
+            ul{
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+            }
+        }
+    }
+    
+}

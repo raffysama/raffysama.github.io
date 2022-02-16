@@ -4,279 +4,177 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"    
-    />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/scss/main.css">
+    <script src="https://kit.fontawesome.com/fe4918e609.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+    <title>Clipboard-landing-page</title>
 </head>
 <body>
-<section class="section-header" id="section-header">
-    <header class="header" id="header">
-        <nav class="nav container">   
-            <a class="nav-logo" href="#main">Raffy<span>Sama</span></a>
-            <div class="nav-menu">
-                <ul>
-                    <li ><a href="#main" class="main">Home</a></li>
-                    <li ><a href="#about" class="about">about</a></li>
-                    <li ><a href="#skills" class="skills">skills</a></li>
-                    <li ><a href="#portfolio" class="portfolio">portfolio</a></li>
-                    <li><a href="#contact"  class="contact">contact me</a></li>
-                </ul>
+
+    <main>
+        <section class="home">
+            <div class="home__container">
+                <div class="home__logo">
+                    <img src="../images/logo.svg" alt="logo">          
+                </div>
+
+                <div class="home__header--name">
+                    <h1>A history of everything you copy</h1>
+                </div>
+                    <h2>Clipboard allow you to track and organize you 
+                        copy. Instanly access your clipboard on all your devices.
+                    </h2>
+                <div class="home__btn">
+                    <button class="ios">Download for IOS</button>
+                    <button class="mac">Download for Mac</button>
+                </div>
+
             </div>
-            <div id="menu-bar" class="fas fa-bars"></div>
-        </nav>        
-    </header>
-</section>
-<div class="top-div" id="top-div"></div>
-    <section class="main" id="main">
-        <div class="main-container">
-            <div class="text-main">
-                <h3 data-aos="zoom-in" data-aos-duration="800">Hi,I'am Raffy</h3>
-                <p>Front-end web developer</p>
-                <p>Experienced in web design and producing quality work</p>
-                <a href="./data/resume.pdf" download><button>Download CV <i class="fas fa-arrow-circle-down"></i></button></a>
-       
+        </section>    
+    </main>
+
+    <section class="introduction">
+        <div class="introduction__header">
+            <h1>Keep track of your snippets</h1>
+            <h2>Clipboard instantly stores any item you copy in the cloud,
+                meaning you can access your snippets immediately on all your devices.
+                Our Mac and iOS apps will help you organize everythings.
+            </h2>
+        </div>
+        <div class="introduction__container"> 
+                <div class="introduction__image">
+                    <img src="../images/image-computer.png" alt="computer">
+                </div>
+            <div class="introduction__text">
+                <div class="introduction__text--1">
+                    <h3>Quick Search</h3>
+                    <p>Easily search your snippets by content,<br>
+                      category, web address, application and more.
+                    </p>
+                </div>
+                <div class="introduction__text--2">
+                    <h3>iCloud Sync</h3>
+                    <p>Instantly saves and syncs snippets across all<br> your devices</p>
+                </div>
+                <div class="introduction__text--3">
+                    <h3>Complete History</h3>
+                    <p>Retrive any snippets from the first moment<br> you started using the app.</p>
+                </div>
             </div>
-            
-                <div class="image-main">
-                    <div class="img-container">
-                       <img src="./image/mainimage.png" alt="">    
-                    </div>            
-                </div>    
-                <div class="icon" data-aos="fade-left">
-                    <a href="https://www.linkedin.com/in/raffy-gumapo-2a7861224/"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/raffysama"><i class="fab fa-github"></i></a> 
-                    <a href=""><i class="fab fa-instagram"></i></a>                      
-                </div>      
+        </div>
+        
+    </section>
+
+    <section class="access">
+        <div class="access__container">
+            <div class="access__header">
+                <h1>Access Clipboard anywhere</h1>
+                <h2>Whether you're on the go, or at your computer,you can access
+                    all your Clipboard<br> snippets in a few simple clicks.
+                </h2>
+            </div>
+            <div class="access__image">
+                <img src="../images/image-devices.png" alt="devices">
+            </div>
         </div>
     </section>
-    
-<section class="about" id="about">
-    <div class="info-container">
-            <div class="text-about" data-aos="zoom-in" data-aos-duration="800">
-                <h1>about me</h1>
-                <p>introduction</p>
-            </div>
-            
-                <div class="about-container container">     
-                    <div class="image-about" data-aos="fade-right">
-                        <img src="./image/mainprofile.jpg" alt="">
-                    </div>
-                    <div class="about-intro">
-                        <p>I'am Raffy Gumapo graduated as a Bachelor of science in Information technology
-                            and a front-end web developer.
-                            My education has focused on not only the learning the fundamentals, but also on the practical application of the information learned within those classes. For example, I played a lead role in a class project where we gathered and analyzed best practice data from this industry.
-                        </p>       
-                        <div class="about-date">
-                            <h1>Education</h1>
-                            <p>University of the East - Caloocan</p>
-                            <span><i class="far fa-calendar-alt"></i> - 2012</span>
-                        </div>
-                    </div>
-                </div>
-          
-           <button class="scrollTop">
-            <a href="#top-div"><i class="fas fa-arrow-circle-up"></i></a>
-          </button>
-    </div>
-</section>
 
-<section class="skills" id="skills">
-    <div class="skills-container">
-            <div class="text-skills" data-aos="zoom-in" data-aos-duration="800">
-                <h1>Skills</h1>
-                <p>my technical skills</p>
+    <section class="workflow">
+        <div class="workflow__container">
+            <div class="workflow__header">
+                <h1>Supercharge your workflow</h1>
+                <h2>We've got the tools to boost your productivity.</h2>
             </div>
-            <div class="skills-list">
-                <h4>Front-end Development</h4>
-                <div class="skills-bar container">
-                    <div class="bar">
-                        <div class="info-html">
-                            <div><p>HTML</p></div>
-                            <div><p>85%</p></div>
-                        </div>
-                        <div class="progress-line html" ><span ></span></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info-css">
-                            <div><p>CSS</p></div>
-                            <div><p>80%</p></div>
-                        </div>
-                        <div class="progress-line css"><span ></span></div>
-                    </div>
-                    <div class="bar">
-                        <div class="info-js">
-                            <div><p>JavaScript</p></div>
-                            <div><p>70%</p></div>
-                        </div>
-                        <div class="progress-line js"><span></span></div>
-                    </div>
+            <div class="workflow__snippets">
+                <div class="workflow__snippets--image1">
+                    <img src="../images/icon-blacklist.svg" alt="blacklist">
+                    <h2>Create blacklists</h2>
+                    <p>Ensure sensitive information never makes its way to your clipboard
+                        by excluding certain sources.
+                    </p>
+                </div>
+                <div class="workflow__snippets--image2">
+                    <img src="../images/icon-text.svg" alt="text">
+                    <h2>Plain text snippets</h2>
+                    <p>Remove unwanted formatting from copied text for a consistent look.
+                    </p>
+                </div>
+                <div class="workflow__snippets--image3">
+                    <img src="../images/icon-preview.svg" alt="preview">
+                    <h2>Sneak preview</h2>
+                    <p>Quick preview of all snippets on your Clipboard for easy access.
+                    </p>
                 </div>
             </div>
-    </div>
-</section>
+        </div>
 
-
-<section class="portfolio" id="portfolio">
-    <div class="portfolio-container">
-            <div class="port-heading" data-aos="zoom-in" data-aos-duration="800">
-                <h1>Portfolio</h1>
-                <p>Recent work</p>
+        <div class="workflow__company">
+            <div class="workflow__company--google">
+                <img src="../images/logo-google.png" alt="google">
             </div>
-                <div class="swiper port-swiper">
-                    <div class="port-wrapper swiper-wrapper">
-                        <div class="swiper-slide port-image">
-                            <img src="./image/covid.JPG" alt="">
-                            <div class="swiper-info">
-                                <h3>Information - Website</h3>
-                                <p>All information about covid how to prevent and getvaccinated</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide port-image">
-                            <img src="./image/ecommerce.JPG" alt="">
-                            <div class="swiper-info">
-                                <h3>E-commerce - Website</h3>
-                                <p>E-commerce webiste</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide port-image">
-                            <img src="./image/landing.JPG" alt="">
-                            <div class="swiper-info">
-                                <h3>Landing Page - Website</h3>
-                                <p>Mc Donalds landing page</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide port-image">
-                            <img src="./image/psd.JPG" alt="">
-                            <div class="swiper-info">
-                                <h3>PSD to HTML - Website</h3>
-                                <p>converted PSD to HTML </p>
-                            </div>
-                        </div>        
+            <div class="workflow__company--ibm">
+                <img src="../images/logo-ibm.png" alt="ibm">
+            </div>
+            <div class="workflow__company--microsoft">
+                <img src="../images/logo-microsoft.png" alt="microsoft">
+            </div>
+            <div class="workflow__company--hp">
+                <img src="../images/logo-hp.png" alt="hp">
+            </div>
+            <div class="workflow__company--vector">
+                <img src="../images/logo-vector-graphics.png" alt="vector">
+            </div>
+        </div>
+    </section>
+
+    <section class="first-footer">
+        <div class="first-footer__container">
+            <div class="first-footer__container--name">
+                <h1>Clipboard for iOS and Mac OS</h1>
+                <h2>Available for free on the App Store. Download for Mac or IOS,
+                    sync with iCloud and<br> you're ready to start adding to your clipbaord.
+                </h2>
+            </div>
+            <div class="first-footer__btn">
+                <button class="ios">Download for IOS</button>
+                <button class="mac">Download for Mac</button>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer__container">
+            <div class="footer__container--logo">
+                <img src="../images/logo.svg" alt="logo">
+            </div>
+            <div class="footer__container--link">
+                <ul>
+                    <div>
+                    <li><a href="!#">FAQs</a></li>
                     </div>
-                    <div class="swiper-pagination"></div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>    
-                </div>
-                <div class="popup-image">
-                    <span>&times;</span>
-                    <img src="./image/psd.JPG" alt="">
-                </div>
-    </div>
-</section>
-
-
-<section class="contact" id="contact">
-            <div class="contact-heading" data-aos="zoom-in" data-aos-duration="800">
-                <h1>Contact me</h1>
-                <p>get in touch</p>
-            </div>
-    <div class="contact-container">
-            <div class="contact-details"> 
-                <div class="contact-list">
-                    <h3 class="call">call me</h3>
-                    <p>+639455012286</p>
-                </div>
+                    <div>
+                    <li><a href="!#">Private</a></li>
+                    </div>
+                    <div>
+                    <li><a href="!#">Intall Guide</a></li>
+                    </div>
+                    <div>
+                    <li><a href="!#">Contact Us</a></li>
+                    </div>
+                    <div>
+                    <li><a href="!#">Press Kit</a></li>
+                    </div>
+                </ul>
                 
-                <div class="contact-list">
-                    <h3 class="email">email me</h3>
-                    <p>raffysama@gmail.com</p>
-                </div>
-                <div class="contact-list">
-                    <h3 class="location">location</h3>
-                    <p>Valenzuela, Philippines  </p>
+            </div>
+            <div class="footer__container---social">
+                <div class="social--container">
+                    <i class="fa-brands fa-facebook-square"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
                 </div>
             </div>
-
-            <div class="contact-inputs">
-                <form class="contact-form" action="https://formspree.io/f/xeqnazvr" method="POST" id="my-form">
-                    <div class="contact-name">
-                        <div class="contact-Fname">
-                            <label class="label-name" for="name">Name</label>
-                            <input type="text" id="name" class="input-name" name="name" required="">
-                        </div>
-                        <div class="contact-email">
-                            <label class="label-email" for="email">E-mail</label>
-                            <input type="email" id="email" class="input-email" name="email" required="">
-                        </div>
-                    </div>  
-
-                    <div class="project-container">
-                            <div class="content-project">
-                                <label class="label-project" for="project">Project</label>
-                                <input type="text" id="project" class="input-project" name="project">
-                            </div>
-                            <div class="content-message">
-                                <textarea name="message" id="" cols="30" rows="10" id="message" placeholder="message me!" class="input-message"></textarea>
-                            </div>
-                            <div class="status-container">
-                                <button id="sendBtn" class="contact-btn" type="submit" name="submit" value="send">
-                                    Send message                  
-                                </button>
-                                    <div id="status"></div>
-                            </div>
-                    </div>
-                </form>
-            </div>
-     </div>
-    
-</section>
-
-<section class="footer" id="footer">
-    <div class="footer-container">
-            <footer class="footer-details container">
-                <div class="footer-heading">
-                    <h1>RaffySama</a></h1>
-                    <span>Front-end Developer</span>
-                </div>
-                <div class="nav-footer">
-                    <ul>
-                        <li><a href="#skills">skills</a></li>
-                        <li><a href="#portfolio">portfolio</a></li>
-                        <li><a href="#contact">contact me</a></li>
-                    </ul>
-                </div>
-                <div class="footer-icon">
-                    <div class="icon">
-                        <a href="https://www.linkedin.com/in/raffy-gumapo-2a7861224/"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/raffysama"><i class="fab fa-github"></i></a> 
-                        <a href=""><i class="fab fa-instagram"></i></a> 
-                       
-                    </div>
-                   
-                </div>
-               
-            </footer>
-            <div class="copy-text">
-              <p>&copy;Raffy Gumapo. All rights reserved </p> 
-            </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        duration: 1300,
-        mirror: true
-    });
-  </script>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script src="./js/script.js"></script>
+        </div>
+    </footer>
 </body>
 </html>

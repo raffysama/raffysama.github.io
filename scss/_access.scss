@@ -1,0 +1,25 @@
+.access__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+    .access__header{
+        text-align: center;
+        margin-bottom: 100px;
+
+        h1{
+            color: $neutralPrimaryColor;
+            margin-bottom: 20px;
+        }
+        h2{
+            color: $neutralSecondaryColor;
+            font-size: 18px;
+            line-height: 2;
+        }
+    }
+    .access__image img{
+        width: 100%;
+    }
+}

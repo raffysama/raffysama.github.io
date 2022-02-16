@@ -1,0 +1,56 @@
+.workflow{
+    &__company{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        grid-column-gap: 5rem;
+        grid-row-gap: 5rem;
+        padding: 0 5rem 0 5rem;
+        justify-items: center;
+        margin-top: 200px;
+    }
+}
+
+
+
+.workflow__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .workflow__header{
+        text-align: center;
+
+        h1{
+            color: $neutralPrimaryColor;
+            margin-bottom: 20px;
+        }
+        h2{
+            color: $neutralSecondaryColor;
+            font-size: 18px;
+            line-height: 2;
+        }
+    }
+
+    .workflow__snippets{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+        width: 70%;
+        grid-gap: 6rem;
+        margin-top: 100px;
+
+        h2{
+            color: $neutralPrimaryColor;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        p{
+            color: $neutralSecondaryColor;
+            line-height: 2;
+        }
+        img{
+            display: block;
+            margin: 0  auto 50px auto;
+        }     
+    }
+}
